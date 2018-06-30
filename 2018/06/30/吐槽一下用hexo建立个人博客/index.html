@@ -27,7 +27,7 @@
     <!--Title-->
 
 
-<title>使用hexo博客框架编写文章时，如何插入图片 | LIUN</title>
+<title>吐槽一下用hexo建立个人博客 | LIUN</title>
 
 
     <link rel="alternate" href="/atom.xml" title="LIUN" type="application/atom+xml">
@@ -133,9 +133,9 @@
                     <p id="process"></p>
 <article class="post">
     <div class="post-head">
-        <h1 id="使用hexo博客框架编写文章时，如何插入图片">
+        <h1 id="吐槽一下用hexo建立个人博客">
             
-	            使用hexo博客框架编写文章时，如何插入图片
+	            吐槽一下用hexo建立个人博客
             
         </h1>
         <div class="post-meta">
@@ -143,8 +143,8 @@
     
     <span class="categories-meta fa-wrap">
         <i class="fa fa-folder-open-o"></i>
-        <a href="/categories/学习记录">
-            学习记录
+        <a href="/categories/吐槽一下">
+            吐槽一下
         </a>
     </span>
     
@@ -173,32 +173,10 @@
     </div>
     
     <div class="post-body post-content">
-        <p>很多人在写博客中会插入一些图片，但是会发现在这个hexo中插入图片是那么的麻烦，然后查阅了一下hexo的官方文档，发现了这么几句代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_path slug %&#125;</span><br><span class="line">&#123;% asset_img slug [title] %&#125;</span><br><span class="line">&#123;% asset_link slug [title] %&#125;</span><br></pre></td></tr></table></figure>
-<p>然后就开始头痛了，这是怎么个写法。。。</p>
-<p>在这里我教一下如何在hexo中插入图片。</p>
-<p>1、编写博客的工具还是用Typora。</p>
-<p>2、打开myBlog文件夹，找到_config.yml这个配置文件，打开它，将post_asset_folder改为true</p>
-<p>这个功能实际上是资源文件夹的功能，改为true后，在git bash中输入hexo n 建立新的博客文件时会给你一个同名的文件夹，这个文件夹是用来存放图像的。</p>
-<p><img src="使用hexo博客框架编写文章时，如何插入图片\QQ截图20180630160533.png" alt=""></p>
-<p>3、然后需要安装一个图片路径转换的插件，这个插件的名字是hexo-asset-image，在myBlog文件夹中打开git bash然后输入以下命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
-<p>4、然后这时我们在git bash中用命令新建一个博客文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;测试&quot;</span><br></pre></td></tr></table></figure>
-<p>这时就会发现，在post文件夹内出现了一个测试的文件夹和一个测试的md博客文件，这时用Typora打开测试.md，然后把图片放到测试的文件夹内。</p>
-<p>5、拖拽图片到Typora中，就会发现图片已经进来了，但是有一长串的途径，因为是在网页上浏览，所以是不能用绝对路径的，要使用相对路径。</p>
-<p><img src="使用hexo博客框架编写文章时，如何插入图片\QQ截图20180630161049.png" alt=""></p>
-<p>比如上图这个 需要把C:\Users\liun\Desktop\Blog\myBlog\source_posts\ 这一长串都删掉，只留下创建的文件夹的名称和图片的名称。然后前面中括号里的文本可以留着也可以不留着，这个随意的。</p>
-<p>6、这时图片就已经插在文章中了。然后等待2-3分钟 输入以下命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-<p>更新一下文章的内容。然后打开博客网站查看一下，图片是否已经显示。</p>
-<p>在这里我要说明一下，可能会出现的一些问题</p>
-<p>（1）、打开博客后，发现不显示图片，这时我们打开Blog\myBlog\public\2018\这个日期的文件夹，这里存放的是我们博客文件生成的网页，在这里查看一下是否有我们的博客网页 是否有我们插入的那个图片</p>
-<p><img src="使用hexo博客框架编写文章时，如何插入图片\QQ截图20180630161609.png" alt=""></p>
-<p>如果不存在就说明前面的步骤的错了，再重新检查一下。</p>
-<p>（2）不显示的原因可能是延迟问题。等待几分钟再重新输入命令测试一下。</p>
-<p>（3）单击进去后出现404找不到资源文件，这时可以把post下的所有源文件和public下的网页文件删除掉，再重新按照我给出的步骤，建立文件试一下。</p>
-<p>最后祝大家学习愉快。</p>
+        <p>​      慢慢的我也适应了用hexo搭建的个人博客，但是其中有很多地方值得吐槽一下，比如说博客文件的内容更新，有时博客写完了之后，更新了无数次，就像是有延迟一样一直是原先的那种情况。</p>
+<p>有时图片无法进行加载，而这个可能只是在配置文件中修改了一个小小的标签所导致。</p>
+<p>所以，有条件的朋友还是自己租服务器，租域名，自己搭建一个属于自己的个人博客，这才有属于自己的成就感。而用github搭建的就像是寄人篱下一样，什么都是别人的。遇到很多问题都是无法从根本上去解决。</p>
+<p><img src="吐槽一下用hexo建立个人博客\QQ图片20180630180940.jpg" alt=""></p>
 
     </div>
 
@@ -216,15 +194,10 @@
 
 <div class="article-nav prev-next-wrap clearfix">
     
-        <a href="/2018/06/30/吐槽一下用hexo建立个人博客/" class="pre-post btn btn-default" title='吐槽一下用hexo建立个人博客'>
-            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
-            <span class="hidden-xs">吐槽一下用hexo建立个人博客</span>
-        </a>
     
-    
-        <a href="/2018/06/30/hexo博客如何更换新的主题/" class="next-post btn btn-default" title='hexo博客如何更换新的主题'>
+        <a href="/2018/06/30/使用hexo博客框架编写文章时，如何插入图片/" class="next-post btn btn-default" title='使用hexo博客框架编写文章时，如何插入图片'>
             <span class="hidden-lg">下一篇</span>
-            <span class="hidden-xs">hexo博客如何更换新的主题</span><i class="fa fa-angle-right fa-fw"></i>
+            <span class="hidden-xs">使用hexo博客框架编写文章时，如何插入图片</span><i class="fa fa-angle-right fa-fw"></i>
         </a>
     
 </div>
